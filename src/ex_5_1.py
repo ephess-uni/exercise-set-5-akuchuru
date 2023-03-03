@@ -22,7 +22,8 @@ if __name__ == "__main__":
     
     parser = argparse.ArgumentParser(description=desc)
     
-    parser.add_argument("infile", type=argparse.FileType('r'))
+    #parser.add_argument("infile", type=argparse.FileType('r'))
+    parser.add_argument('infile',help='file path',nargs='?')
        
     args = parser.parse_args()
     
