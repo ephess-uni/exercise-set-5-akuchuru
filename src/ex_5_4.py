@@ -20,5 +20,5 @@ raw_data = np.loadtxt(input_file)
 
 raw_data[raw_data<0] = 0
 
-#np.savetxt(outfile, raw_data, fmt='%.2e')
-np.savetxt(outfile, raw_data)
+np.savetxt(output_file, raw_data, fmt='%.2e')
+
