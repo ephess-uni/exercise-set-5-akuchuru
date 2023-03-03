@@ -23,7 +23,7 @@ if __name__ == "__main__":
 
     raw_data = np.loadtxt(INFILE)
 
-    raw_data -= raw_data.mean()
+    raw_data = raw_data-raw_data.mean()
     
     std_=raw_data.std()
     
