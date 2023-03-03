@@ -28,5 +28,5 @@ if __name__ == "__main__":
     std_=raw_data.std()
     
     processed=raw_data/std_
-    
+    os.makedirs(root_dir / "outputs", exist_ok=True)
     np.savetxt(OUTFILE, processed, fmt='%.2e')
