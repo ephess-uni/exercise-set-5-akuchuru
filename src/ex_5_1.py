@@ -26,5 +26,5 @@ if __name__ == "__main__":
     parser.add_argument('infile',help='file path',nargs='?')
        
     args = parser.parse_args()
-    
-    main(args.infile.name)
+    if args.infile:
+        main(args.infile.name)
